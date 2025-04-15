@@ -28,7 +28,7 @@
       chatbox.innerHTML += `<div class="msg user"><strong>You:</strong> ${userMessage}</div>`;
       input.value = "";
 
-      const response = await fetch("http://localhost:5678/webhook/chat", {
+      const response = await fetch("https://ebbe-2405-201-c013-f135-c98e-3ecb-a6f9-9780.ngrok-free.app/webhook/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userMessage })
